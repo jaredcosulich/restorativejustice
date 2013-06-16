@@ -6,9 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Restorative Justice" />
     <title>Restorative Justice</title>
+    
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        a {
+            display: block;
+            font-size: 30px;
+            background-color: blue;
+            width: 300px;
+            height: 60px;
+            line-height: 60px;
+            margin: 45px auto 0 auto;
+            color: white;
+            text-decoration: none;
+            -webkit-border-radius: 24px;
+            -moz-border-radius: 24px;
+            border-radius: 24px;  
+            
+            -moz-box-shadow:inset 0px 1px 0px 0px lightblue;
+            -webkit-box-shadow:inset 0px 1px 0px 0px lightblue;
+            box-shadow:inset 0px 1px 0px 0px lightblue;
+            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, blue), color-stop(1, darkblue) );
+            background:-moz-linear-gradient( center top, blue 5%, darkblue 100% );
+            background-color: blue;                      
+        }
+    </style>
+    
+    <script type='text/javascript'>
+        function loadDefaults() {
+            var params = location.search.replace( "?", "" )
+            var links = document.getElementsByTagName('a');
+            for (i=0; i<links.length; ++i) {
+                links[i].href += '?' + params
+            }
+        }
+        window.onload=loadDefaults;
+    </script>
   </head>
 
   <body>
-      Test
+      <h1>Restorative Justice</h1>
+      <a href='https://docs.google.com/forms/d/1rdaQxmqyoYPecuNaT6ZJ8tUPsIiesrB6erLl4hKJI5k/viewform'>Tier 1</a>
+      <a href='https://docs.google.com/forms/d/1rdaQxmqyoYPecuNaT6ZJ8tUPsIiesrB6erLl4hKJI5k/viewform'>Tier 2</a>
+      <a href='https://docs.google.com/forms/d/1rdaQxmqyoYPecuNaT6ZJ8tUPsIiesrB6erLl4hKJI5k/viewform'>Tier 3</a>
   </body>
 </html>
